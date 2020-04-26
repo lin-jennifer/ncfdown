@@ -4,7 +4,7 @@ author: "Jennifer Lin"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 github: "lin-jennifer"
 output:
-  ncfdown:
+  ncfdown::ncf:
     toc: TRUE
     number_sections: FALSE
     code_folding: "hide"
@@ -12,6 +12,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ncfdown)
 ```
 
 ## R Markdown
