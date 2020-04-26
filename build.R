@@ -3,11 +3,11 @@
 # ------------------------------- #
 
 # Remove previous version just in Case
-remove.packages("epuRate")
+remove.packages("ncfdown")
 
 # Install with devtools
 library(devtools)
-devtools::install("lin-jennifer/ncfdown")
+devtools::install("../ncfdown")
 
 # Load to check it is all good
-library(epuRate)
+library(ncfdown)
