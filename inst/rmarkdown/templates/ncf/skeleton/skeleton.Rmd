@@ -6,6 +6,7 @@ mail: "jenniferlin2025@u.northwestern.edu"
 linkedin: "jennifer-lin16"
 twitter: "jennifer_lin16"
 github: "lin-jennifer"
+logo: "fw.jpeg"
 output:
   ncfdown::ncf:
     toc: TRUE
