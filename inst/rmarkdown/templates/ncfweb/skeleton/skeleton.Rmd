@@ -1,0 +1,88 @@
+---
+title: "ncfdown: A R Markdown template for New College of Florida"
+author: "Jennifer Lin"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+mail: "jenniferlin2025@u.northwestern.edu"
+linkedin: "jennifer-lin16"
+twitter: "jennifer_lin16"
+github: "lin-jennifer"
+logo: "fw.jpeg"
+output:
+  ncfdown::ncfweb:
+    toc: TRUE
+    number_sections: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ncfdown)
+library(datasets)
+library(dplyr)
+```
+
+# Welcome
+
+**This is the `ncfweb` option. You notice that this does not have that code window on the upper right. It's done so that you can make a website from this**
+
+Welcome to `ncfdown`, a R Markdown template with the New College of Florida spirit. This theme was created using [epuRate](https://github.com/holtzy/epuRate) as a springboard.
+
+If you are familiar with Markdown, feel free to go ahead and do regular Markdown things with this template. Below, I will demonstrate some of the features that you can use in R Markdown.
+
+I assume that since you are here, you already have this package installed into your RStudio, but if not...
+
+```{r, eval=FALSE}
+library(devtools)
+install_github("lin-jennifer/ncfdown")
+library(ncfdown)
+```
+
+For this template, you have the option to show all the code or not. Simply go to the top of this document, click on the code button and select show or hide all code. You can also show and hide line by line.
+
+For this demo, I use the `ncfdown`, `datasets` and `dplyr` packages.
+
+```{r, eval = FALSE}
+library(ncfdown)
+library(datasets)
+library(dplyr)
+```
+
+
+# A Breeze Intro to R Markdown
+
+Here are some really quick things you can do in Markdown...
+
+**Bold**
+```
+**Bold**
+```
+
+*Italicize*
+```
+*Italicize*
+```
+
+I will let R Studio show you the rest: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+
+# Plotting Data
+
+```{r}
+data("iris")
+```
+
+Let's load the `iris` data from the `datasets` package and view it.
+
+```{r}
+head(iris)
+```
+
+Let's plot sepal length and width for setosa species
+
+```{r}
+iris <- iris %>% filter(Species == "setosa")
+plot(iris$Sepal.Length, iris$Sepal.Width,
+     xlab = "Length", ylab = "Width")
+```
+
+# Conclusions
+
+Have feedback on this template? Please reach out at [jenniferlin2025@u.northwestern.edu](mailto:jenniferlin2025@u.northwestern.edu).
