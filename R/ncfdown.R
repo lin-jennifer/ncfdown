@@ -21,7 +21,7 @@ ncf <- function(toc = TRUE, code_folding = "hide", number_sections=TRUE) {
 }
 
 
-# Features of NCF Template
+# Features of NCFWEB Template
 ncfweb <- function(toc = TRUE, number_sections=TRUE) {
 
   # get the locations of resource files located within the package
