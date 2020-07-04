@@ -1,11 +1,11 @@
 Package: ncfdown
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Markdown Template for New College
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jennifer Lin
+Maintainer: Jennifer Lin <jennifer.lin16@ncf.edu>
+Description: Use this as you would an html_document in R Markdown. 
+    The output format contains colors inspired by New College of Florida
+License: 
 Encoding: UTF-8
 LazyData: true
